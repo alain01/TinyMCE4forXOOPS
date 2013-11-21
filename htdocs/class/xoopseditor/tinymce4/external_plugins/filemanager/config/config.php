@@ -11,7 +11,19 @@ include_once $xoops_root_path . "/mainfile.php";
 $chemin_array=parse_url(XOOPS_URL);
 $chemin_scheme =  $chemin_array["scheme"]; // http
 $chemin_host =  $chemin_array["host"]; // www.example.com  or // localhost
-$chemin_path =  $chemin_array["path"]; // /myweb1
+//  $chemin_path =  $chemin_array["path"]; // /myweb1
+  if (!isset($chemin_array['path']))
+    {
+      $chemin_path = '';
+    } 
+  else
+    {
+      $chemin_path =  $chemin_array["path"];
+    }
+    
+
+
+
 // XOOPS
 
 //include_once $xoops_root_path . "/mainfile.php";
@@ -114,8 +126,8 @@ global $xoopsUser;
 // 2 : members
 // 3 : anonymous
 // 4 : your new group
-$allowed_groups_upload=array(1); // id des groupes autorisés en upload
-$allowed_groups_createfolder=array(1); // id des groupes autorisés create folder
+$allowed_groups_upload=array(1); // id des groupes autorisï¿½s en upload
+$allowed_groups_createfolder=array(1); // id des groupes autorisï¿½s create folder
 if ($xoopsUser) {  
     $usergroups = $GLOBALS['xoopsUser']->getGroups(); 
     $result_upload = array_intersect($usergroups, $allowed_groups_upload); 
