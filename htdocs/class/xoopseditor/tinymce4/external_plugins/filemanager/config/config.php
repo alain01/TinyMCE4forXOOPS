@@ -20,15 +20,17 @@ $chemin_host =  $chemin_array["host"]; // www.example.com  or // localhost
     {
       $chemin_path =  $chemin_array["path"];
     }
-    
-
-
-
 // XOOPS
 
 //include_once $xoops_root_path . "/mainfile.php";
 
-session_start();
+//XOOPS
+//session_start();
+if(!isset($_SESSION)) 
+{ 
+session_start(); 
+}
+//XOOPS
 mb_internal_encoding('UTF-8');
 //------------------------------------------------------------------------------
 // DON'T COPY THIS VARIABLES IN FOLDERS config.php FILES
