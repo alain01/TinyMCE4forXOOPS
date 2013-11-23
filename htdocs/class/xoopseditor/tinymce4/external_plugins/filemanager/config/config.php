@@ -1,5 +1,4 @@
 <?php
-
 // XOOPS
 $current_path = dirname(__FILE__);
 if ( DIRECTORY_SEPARATOR != "/" ) {
@@ -31,6 +30,7 @@ if(!isset($_SESSION))
 session_start(); 
 }
 //XOOPS
+//session_start();
 mb_internal_encoding('UTF-8');
 //------------------------------------------------------------------------------
 // DON'T COPY THIS VARIABLES IN FOLDERS config.php FILES
@@ -54,6 +54,7 @@ mb_internal_encoding('UTF-8');
 $base_url=$chemin_scheme."://".$chemin_host;
 
 //$upload_dir = '/source/'; // path from base_url to base of upload folder (with start and final /)
+
 $upload_dir = $chemin_path.'/uploads/filemanager/media/'; // path from base_url to base of upload folder (with start and final /)
 
 //$current_path = '../source/'; // relative path from filemanager folder to upload folder (with final /)
@@ -61,14 +62,9 @@ $current_path = '../../../../../uploads/filemanager/media/'; // relative path fr
 
 //thumbs folder can't put inside upload folder
 $thumbs_base_path = '../../../../../uploads/filemanager/thumbs/'; // relative path from filemanager folder to thumbs folder (with final /)
-
-
-
-
-
-//------------------------------------------------------------------------------
-// YOU CAN COPY AND CHANGE THESE VARIABLES IN FOLDERS config.php FILES
-//------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+// YOU CAN COPY AND CHANGE THESE VARIABLES INTO FOLDERS config.php FILES TO CUSTOMIZE EACH FOLDER OPTIONS
+//--------------------------------------------------------------------------------------------------------
 
 $MaxSizeUpload=100; //Mb
 
@@ -77,6 +73,7 @@ $icon_theme="ico"; //ico or ico_dark you can cusatomize just putting a folder in
 $show_folder_size=true; //Show or not show folder size in list view feature in filemanager (is possible, if there is a large folder, to greatly increase the calculations)
 $show_sorting_bar=true; //Show or not show sorting feature in filemanager
 $loading_bar=true; //Show or not show loading bar
+$transliteration=false; //active or deactive the transliteration (mean convert all strange characters in A..Za..z0..9 characters)
 
 //*******************************************
 //Images limit and resizing configuration
@@ -85,7 +82,6 @@ $loading_bar=true; //Show or not show loading bar
 // set maximum pixel width and/or maximum pixel height for all images
 // If you set a maximum width or height, oversized images are converted to those limits. Images smaller than the limit(s) are unaffected
 // if you don't need a limit set both to 0
-
 $image_max_width=0;
 $image_max_height=0;
 
@@ -114,7 +110,7 @@ $ellipsis_title_after_first_row=true;
 //*************************
 //Permissions configuration
 //******************
-$delete_files=false;
+$delete_files=true;
 $create_folders=false;
 $delete_folders=false;
 $upload_files=false;
@@ -128,8 +124,8 @@ global $xoopsUser;
 // 2 : members
 // 3 : anonymous
 // 4 : your new group
-$allowed_groups_upload=array(1); // id des groupes autoris�s en upload
-$allowed_groups_createfolder=array(1); // id des groupes autoris�s create folder
+$allowed_groups_upload=array(1); // id des groupes autoris?s en upload
+$allowed_groups_createfolder=array(1); // id des groupes autoris?s create folder
 if ($xoopsUser) {  
     $usergroups = $GLOBALS['xoopsUser']->getGroups(); 
     $result_upload = array_intersect($usergroups, $allowed_groups_upload); 
@@ -142,7 +138,7 @@ if ($xoopsUser) {
         } 
 }
 // XOOPS
-	
+
 //**********************
 //Allowed extensions (lowercase insert)
 //**********************
@@ -181,7 +177,6 @@ $hidden_files = array('config.php');
 //XOOPS
 $hidden_files = array('index.html');
 //XOOPS
-
 /*******************
  * JAVA upload 
  *******************/
