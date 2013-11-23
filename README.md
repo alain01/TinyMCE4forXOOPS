@@ -7,9 +7,15 @@ TinyMCE editor v4 for XOOPS
 	V1.10 2013/211/13
 	(Alain01) 
 ==============================================================
+Changelog :
++ Updated TinyMCE V4.0.10 to V4.0.11
++ Updated Responsivefilemanager 9.2.0 to 9.3.0
++ Modify the toolbars (moved right the format and paragraph button)
++ Bug $chemin_array['path'] in tinymce.php and /external_plugins/filemanager/config/config.php
++ bug session in /external_plugins/filemanager/config/config.php
 
 ===============================
-TinyMCE V4.10
+TinyMCE V4.0.11
 ===============================
 - Problème des boutons à liste déroulante : décalage sur la bas
 Remède : <!DOCTYPE html> is required for TinyMCE 4 since it's a HTML5 editor
@@ -41,7 +47,7 @@ Ajout de Responsivefilemanager
 Ajout de Filemanager
 ===============================
 http://responsivefilemanager.com/index.php
-Version 9.2.1 (2013/10/28)
+Version 9.3.0 (2013/11/23)
 
 configuration + droits : /class/xoopseditor/tinymce4/external_plugins/filemanager/config.php
 
