@@ -39,7 +39,7 @@ return array(
     "mode" => "exact",
 //    "convert_urls" => false,
 //    "force_p_newlines" => true,
-    "forced_root_blocks"=> false,
+    "forced_root_block" => false,
     "force_hex_style_colors" => true,
     // to prevent new line after tags (really useful with Xoops)
 //    "apply_source_formatting" => false,
