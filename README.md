@@ -5,11 +5,11 @@ by Alain01
 
 TinyMCE4
 
-1 - copy both directories "class" + "uploads" to the root path web of XOOPS.
-2 - Update the system module
-3 - Go to "control panel" / "Preferences" / "System Module Settings"
-4 - Modify the "Editor Settings" for "blocks" / "comments" / "all modules" as you want
-5 - For somes modules, then go to the preferences option and choose the editor
+- 1 - copy both directories "class" + "uploads" to the root path web of XOOPS.
+- 2 - Update the system module
+- 3 - Go to "control panel" / "Preferences" / "System Module Settings"
+- 4 - Modify the "Editor Settings" for "blocks" / "comments" / "all modules" as you want
+- 5 - For somes modules, then go to the preferences option and choose the editor
 
 If your web site is not in the root path (like http://myxoops/mywebsite.com), please modify 2 files : 
 
@@ -45,9 +45,6 @@ Changes in TinyMCE4XOOPS 1.14 (2013/12/11)
 - Bug session in /external_plugins/filemanager/config/config.phpTinyMCE4forXOOPS
 
 
-
-
-==============================================================
      Ajout de plugin  
 ==============================================================
 - Responsivefilemanager
