@@ -41,8 +41,7 @@ Changes in TinyMCE4XOOPS 1.14 (2013/12/11)
 - Bug $chemin_array['path'] in tinymce.php and /external_plugins/filemanager/config/config.php
 - Bug session in /external_plugins/filemanager/config/config.phpTinyMCE4forXOOPS
 
-     Ajout de plugin  
-==============================================================
+Ajout de plugin  
 - Responsivefilemanager
 http://responsivefilemanager.com/index.php
 
