@@ -6,22 +6,22 @@
  * Plugin info: http://www.cfconsultancy.nl/
  * Author: Ceasar Feijen
  *
- * Version: 1.0 released 15/09/2013
+ * Version: 1.1.1 released 2013-10-14
  */
 
 tinymce.PluginManager.add('qrcode', function(editor) {
 
     function openmanager() {
         var title="Create QRcode";
-        if (typeof editor.settings.qrcode_title !== "undefined" && editor.settings.qrcode_title) {
-            title=editor.settingsqrcode_title;
+        if (typeof tinymce.settings.qrcode_title !== "undefined" && tinymce.settings.qrcode_title) {
+            title=tinymce.settingsqrcode_title;
         }
         win = editor.windowManager.open({
             title: title,
-            file: '/class/xoopseditor/tinymce4/external_plugins/qrcode/qrcode.html',
+            file: tinyMCE.baseURL + '/plugins/qrcode/qrcode.html',
             filetype: 'image',
-	    	width: 550,
-            height: 540,
+	    	width: 650,
+            height: 510,
             inline: 1,
             buttons: [{
                 text: 'cancel',
@@ -36,7 +36,7 @@ tinymce.PluginManager.add('qrcode', function(editor) {
     }
 	editor.addButton('qrcode', {
 		icon: true,
-		image: '/class/xoopseditor/tinymce4/external_plugins/qrcod/icon.png',
+		image: tinyMCE.baseURL + '/plugins/qrcode/icon.png',
 		tooltip: 'Create QRcode',
 		shortcut: 'Ctrl+QR',
 		onclick: openmanager
