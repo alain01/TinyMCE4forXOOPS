@@ -15,7 +15,7 @@ If your web site is not in the root path (like http://myxoops/mywebsite.com), pl
 
 - (...)/uploads/filemanager/templates/liste-templates.js (url lines)
 - (...)/uploads/filemanager/templates/template-video/video.html (src lines)
-
+- 
 Enjoy !
 
 
