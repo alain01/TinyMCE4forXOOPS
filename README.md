@@ -50,7 +50,8 @@ http://www.avoid.org/codemirror-for-tinymce4/
 - QRCode
 https://github.com/cfconsultancy/tinymce4-plugin-qrcode
 
-- Youtube 
+- Youtube
+https://github.com/gtraxx/tinymce-plugin-youtube
 
 - Alignbtn
 
