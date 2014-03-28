@@ -324,11 +324,26 @@ foreach ($this->setting as $key => $val) {
 	$ret .= '"xoops_code": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/xoops_code/plugin.min.js",';
 	$ret .= '"xoops_quote": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/xoops_quote/plugin.min.js",';
 	$ret .= '"xoops_tagextgal": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/xoops_tagextgal/plugin.min.js",';
+	$ret .= '"codemirror": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/codemirror/plugin.min.js",';
 	$ret .= '"filemanager": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/filemanager/plugin.min.js",';
 	$ret .= '"responsivefilemanager": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/responsivefilemanager/plugin.min.js",';
 	$ret .= '},';
     $ret .= "\n";
-	 
+	
+	$ret .= 'codemirror: { 
+		indentOnInit: true, 
+		path: "CodeMirror", 
+		config: { 
+			mode: "application/x-httpd-php", 
+			lineNumbers: false 
+		}, 
+		jsFiles: [ 
+			"mode/clike/clike.js", 
+			"mode/php/php.js" 
+		] 
+	},';
+	$ret .= "\n";
+	
 	$ret .= '"external_filemanager_path": "'.$chemin_path.'/class/xoopseditor/tinymce4/external_plugins/filemanager/",';
     $ret .= "\n";
 

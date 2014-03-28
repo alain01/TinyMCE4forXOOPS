@@ -21,6 +21,9 @@ a img {
 #image {
 	cursor:pointer;
 }
+.hideparent {
+    cursor:pointer;
+}
 
 #formats {
 	margin:10px 0;
@@ -35,4 +38,7 @@ a img {
 #textarea_feedback {
 	font-size:10px;
 	float:right;
+}
+#adv {
+	display: none;
 }
