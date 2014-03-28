@@ -1,9 +1,8 @@
 TinyMCE editor v4 for XOOPS
 ==============================================================
-TinyMCE4XOOPS 2.0 - 2014/03/28
-by Alain01
+TinyMCE4XOOPS 2.0 - 2014/03/28 - by Alain01
 
-TinyMCE4
+TinyMCE4XOOPS installation :
 
 - 1 - copy both directories "class" + "uploads" to the root path web of XOOPS.
 - 2 - Update the system module
@@ -25,7 +24,7 @@ To DO :
 
 Changelog :
 
-Changes in TinyMCE4XOOPS 2.0 (2014/03/28)
+Changes in TinyMCE4XOOPS 2.0 (2014/03/28):
 - Updated TinyMCE V4.0.11 to V4.0.20
 - Updated Responsivefilemanager 9.3.0 to 9.4.0
 - Add index.html files in all directories
@@ -34,14 +33,14 @@ Changes in TinyMCE4XOOPS 2.0 (2014/03/28)
 - Add many languages
 - blue colorisation for XOOPSQuote, XOOPSCode and ExtGallery
 
-Changes in TinyMCE4XOOPS 1.14 (2013/12/11)
+Changes in TinyMCE4XOOPS 1.14 (2013/12/11):
 - Updated TinyMCE V4.0.10 to V4.0.11
 - Updated Responsivefilemanager 9.2.0 to 9.3.0
 - Modify the toolbars (moved right the format and paragraph button)
 - Bug $chemin_array['path'] in tinymce.php and /external_plugins/filemanager/config/config.php
 - Bug session in /external_plugins/filemanager/config/config.phpTinyMCE4forXOOPS
 
-Ajout de plugin  
+Ajout de plugin :
 - Responsivefilemanager
 http://responsivefilemanager.com/index.php
 
