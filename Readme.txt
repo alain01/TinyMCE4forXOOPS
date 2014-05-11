@@ -14,8 +14,18 @@ If your web site is not in the root path (like http://myxoops/mywebsite.com), pl
 - (...)/uploads/filemanager/templates/liste-templates.js (url lines)
 - (...)/uploads/filemanager/templates/template-video/video.html (src lines)
 
-Enjoy !
+If you change the language to another language than english (en) or french (fr), e.g. to german (de), than you have to do following:
+1) create language file "german.php" in \tinymce4\language\ 
+a) the file name must be the same as language in xoops settings
+b) in this file you must define the language code: define("_XOOPS_EDITOR_TINYMCE4_LANGUAGE","de");
+c) this language code must be the same as the name of the language files himself, e.g. "de" -> de.js
 
+2) check, whether your language files are existing:
+a \tinymce4\tinymce\js\tinymce\langs\de.js
+b) \tinymce4\external_plugins\codemirror\langs\de.js
+c) \tinymce4\external_plugins\youtube\langs\de.js
+
+Enjoy !
 
 To DO : 
 - Add class name to images
