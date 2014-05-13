@@ -21,7 +21,7 @@ b) in this file you must define the language code: define("_XOOPS_EDITOR_TINYMCE
 c) this language code must be the same as the name of the language files himself, e.g. "de" -> de.js
 
 2) check, whether your language files are existing:
-a \tinymce4\tinymce\js\tinymce\langs\de.js
+a) \tinymce4\tinymce\js\tinymce\langs\de.js
 b) \tinymce4\external_plugins\codemirror\langs\de.js
 c) \tinymce4\external_plugins\youtube\langs\de.js
 
