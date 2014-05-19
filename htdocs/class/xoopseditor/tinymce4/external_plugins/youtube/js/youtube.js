@@ -228,13 +228,14 @@ var youTube = (function($, window, document, undefined){
 $(function(){
     // Init templatewith mustach
     var data = {
-        "youtubeurl": parent.tinymce.util.I18n.translate('Youtube URL'),
-        "youtubeID": parent.tinymce.util.I18n.translate('Youtube ID'),
-        "youtubeWidth": parent.tinymce.util.I18n.translate('width'),
-        "youtubeHeight": parent.tinymce.util.I18n.translate('height'),
-        "youtubeAutoplay": parent.tinymce.util.I18n.translate('autoplay'),
-        "youtubeHD": parent.tinymce.util.I18n.translate('HD video'),
-        "youtubeREL": parent.tinymce.util.I18n.translate('Related video')
+        "youtubeurl": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_URL'),
+		"youtubebtninsert": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_BTN_INSERT'),
+        "youtubeID": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_ID'),
+        "youtubeWidth": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_WIDTH'),
+        "youtubeHeight": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_HEIGHT'),
+        "youtubeAutoplay": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_AUTOPLAY'),
+        "youtubeHD": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_HD_VIDEO'),
+        "youtubeREL": parent.tinymce.util.I18n.translate('_XOOPS_EDITOR_TINYMCE_YOUTUBE_RELATED_VIDEO')
     };
     //Use jQuery's get method to retrieve the contents of our template file, then render the template.
     $.get('view/forms.html' , function (template) {
