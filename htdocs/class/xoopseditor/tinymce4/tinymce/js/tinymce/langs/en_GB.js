@@ -177,5 +177,6 @@ tinymce.addI18n('en_GB',{
 "Table": "Table",
 "Format": "Format",
 "Insert file": "Insert file",
-"Modify Char": "Modify Char"
+"Modify Char": "Modify Char",
+"Current window": "Current window"
 });

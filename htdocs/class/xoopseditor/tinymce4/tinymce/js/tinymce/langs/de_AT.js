@@ -184,5 +184,6 @@ tinymce.addI18n('de_AT',{
 "Table": "Tabelle",
 "Format": "Format",
 "Insert file": "Datei einf\u00fcgen",
-"Modify Char": "Zeichenformat \u00e4ndern"
+"Modify Char": "Zeichenformat \u00e4ndern",
+"Current window": "Aktuelles Fenster"
 });
