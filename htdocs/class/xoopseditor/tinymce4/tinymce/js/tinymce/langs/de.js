@@ -182,5 +182,7 @@ tinymce.addI18n('de',{
 "Tools": "Werkzeuge",
 "View": "Ansicht",
 "Table": "Tabelle",
-"Format": "Format"
+"Format": "Format",
+"Insert file": "Datei einf\u00fcgen",
+"Modify Char": "Zeichenformat \u00e4ndern"
 });
