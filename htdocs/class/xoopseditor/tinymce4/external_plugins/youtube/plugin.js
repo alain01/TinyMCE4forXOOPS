@@ -27,7 +27,7 @@ tinymce.PluginManager.add('youtube', function(editor, url) {
         dom = editor.dom;
         // Open URL based window
         win = editor.windowManager.open({
-            title: "YouTube Title",
+            title: "_XOOPS_EDITOR_TINYMCE_YOUTUBE_TITLE",
             file: url + '/youtube.html',
             width: 800,
             height: 530,
@@ -42,7 +42,7 @@ tinymce.PluginManager.add('youtube', function(editor, url) {
         //text: 'youtube',
         icon: true,
         image: url+'/img/youtube.gif',
-        tooltip: 'Youtube insert',
+        tooltip: '_XOOPS_EDITOR_TINYMCE_YOUTUBE_TOOLTIP',
         onclick: showDialog,
         onPostRender: function() {
             var ctrl = this;
